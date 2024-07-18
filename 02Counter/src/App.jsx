@@ -6,10 +6,13 @@ function App() {
   const [counter, setCounter] = useState(15);
   // let counter = 15;
   const addValue = () => {
-    if (counter === 20) {
+    if (counter >= 20) {
       setCounter(counter);
     }else{
-      setCounter(counter + 1);
+      setCounter(prevCounter =>prevCounter + 1);
+      setCounter(prevCounter =>prevCounter + 1);
+      setCounter(prevCounter =>prevCounter + 1);
+      setCounter(prevCounter =>prevCounter + 1);
     }
     // counter += 1;
     // console.log(counter)
